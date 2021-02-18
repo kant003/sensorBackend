@@ -1,4 +1,7 @@
+# API (Backend) del proyecto SensorDatos con NodeJS
 
-Github:
 
-https://github.com/kant003/sensorBackend.git
+# Fichero .env de ejemplo:
+URL_BASEDATOS='mongodb://localhost:27017/datossensor'
+PUERTO=3000
+TOKEN_SECRETO='111111111111111111'
