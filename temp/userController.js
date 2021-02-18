@@ -92,7 +92,7 @@ async function login(req, res) {
             process.env.TOKEN_SECRETO
         )
         res.header('auth-token', token)
-        res.status(200).json('Login correcto')
+        res.status(200).json(token)
     }catch(error){
         res.status(500).json('error:'+error)
     }
