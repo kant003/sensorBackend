@@ -29,7 +29,7 @@ app.get('/', (req, res)=>{
 const run = async () => {
     await mongoose.connect(process.env.URL_BASEDATOS, 
         { useNewUrlParser: true, useUnifiedTopology: true })
-    await app.listen(process.env.PUERTO || 3000)
+    await app.listen(process.env.PORT || 3000)
     console.log('Servidor y base de datos encendidos correctamente')
 }
 
