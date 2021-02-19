@@ -18,7 +18,7 @@ let UserSchema = Schema(
 )
 
 
-UserSchema.pre('save', async next => {
+UserSchema.pre('save', async function(next) { // No usar funcion tipo flecha
     if (this.isModified('password') === false) {
         next();
     } else {
